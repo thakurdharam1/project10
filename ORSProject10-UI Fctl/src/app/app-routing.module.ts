@@ -45,6 +45,12 @@ import { CartComponent } from './cart/cart.component';
 import { CartlistComponent } from './cart/cartlist.component';
 import { AbcComponent } from './abc/abc.component';
 import { AbclistComponent } from './abc/abclist.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { VehiclelistComponent } from './vehicle/vehiclelist.component';
+import { XyzComponent } from './xyz/xyz.component';
+import { XyzlistComponent } from './xyz/xyzlist.component';
+import { BankComponent } from './bank/bank.component';
+import { BanklistComponent } from './bank/banklist.component';
 
 
 const routes: Routes = [
@@ -320,6 +326,51 @@ const routes: Routes = [
     {
         path: 'abclist',
         component: AbclistComponent
+      
+    },
+    {
+        path: 'vehicle',
+        component: VehicleComponent
+      
+    },
+    {
+        path: 'vehicle/:id',
+        component: VehicleComponent
+      
+    },
+    {
+        path: 'vehiclelist',
+        component: VehiclelistComponent
+      
+    },
+    {
+        path: 'xyz',
+        component: XyzComponent
+      
+    },
+    {
+        path: 'xyz/:id',
+        component: XyzComponent
+      
+    },
+    {
+        path: 'xyzlist',
+        component: XyzlistComponent
+      
+    },
+    {
+        path: 'bank',
+        component: BankComponent
+      
+    },
+    {
+        path: 'bank/:id',
+        component: BankComponent
+      
+    },
+    {
+        path: 'banklist',
+        component: BanklistComponent
       
     },
   

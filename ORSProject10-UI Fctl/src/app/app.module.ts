@@ -65,6 +65,12 @@ import { CartComponent } from './cart/cart.component';
 import { CartlistComponent } from './cart/cartlist.component';
 import { AbcComponent } from './abc/abc.component';
 import { AbclistComponent } from './abc/abclist.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { VehiclelistComponent } from './vehicle/vehiclelist.component';
+import { XyzComponent } from './xyz/xyz.component';
+import { XyzlistComponent } from './xyz/xyzlist.component';
+import { BankComponent } from './bank/bank.component';
+import { BanklistComponent } from './bank/banklist.component';
 
 
 
@@ -130,6 +136,13 @@ export function myHttpLoader(http: HttpClient) {
     CartlistComponent,
     AbcComponent,
     AbclistComponent,
+    VehicleComponent,
+    VehiclelistComponent,
+    XyzComponent,
+    XyzlistComponent,
+    BankComponent,
+    BanklistComponent,
+   
    
 
   ],

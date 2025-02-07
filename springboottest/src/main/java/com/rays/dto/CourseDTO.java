@@ -12,7 +12,7 @@ import com.rays.common.BaseDTO;
  *
  */
 @Entity
-@Table(name = "ST_COURSE")
+@Table(name = "st_course")
 public class CourseDTO extends BaseDTO {
 	
 	@Column(name = "COURSE_ID", length = 50)

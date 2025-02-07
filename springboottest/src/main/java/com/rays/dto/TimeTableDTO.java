@@ -13,7 +13,7 @@ import com.rays.common.BaseDTO;
  *
  */
 @Entity
-@Table(name = "ST_TIMETABLE")
+@Table(name = "st_timetable")
 
 public class TimeTableDTO extends BaseDTO {
 

@@ -14,7 +14,7 @@ import com.rays.common.BaseDTO;
  */
 
 @Entity
-@Table(name = "ST_MARKSHEET")
+@Table(name = "st_marksheet")
 public class MarksheetDTO extends BaseDTO {
 
 	@Column(name = "ROLL_NO", length = 20)

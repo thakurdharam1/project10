@@ -22,7 +22,7 @@ import com.rays.common.BaseDTO;
  */
 
 @Entity
-@Table(name = "ST_USER")
+@Table(name = "st_user")
 public class UserDTO extends BaseDTO {
 
 	public static final String ACTIVE = "Activate";

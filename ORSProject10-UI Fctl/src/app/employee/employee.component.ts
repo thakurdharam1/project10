@@ -33,4 +33,27 @@ export class EmployeeComponent extends BaseCtl {
     form.lastName = data.lastName;
     form.department = data.department;
   }
-}
+  filterInput(event: KeyboardEvent, errorMessageField: string, maxLength: number, allowedType: string) {
+    const pattern = /^[a-zA-Z\s]*$/; 
+    const inputChar = event.key;
+  
+    
+    if (!pattern.test(inputChar) && event.key !== 'Backspace') {
+      event.preventDefault(); 
+      this[errorMessageField] = 'Only letters are allowed!'; 
+      return;
+    }
+  
+   
+    const target = event.target as HTMLInputElement;
+    if (target.value.length >= maxLength && event.key !== 'Backspace') {
+      event.preventDefault(); 
+      this[errorMessageField] = `Only ${maxLength} characters are allowed!`; 
+    } else {
+      this[errorMessageField] = ''; 
+    }
+  }
+  
+  
+  
+} 

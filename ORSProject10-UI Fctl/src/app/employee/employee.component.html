@@ -58,7 +58,7 @@
                   <div class="input-group-text"><i class="fa fa-id-badge grey-text"></i></div>
                 </div>
                 <input type="text" name="name" [(ngModel)]="form.data.name" class="form-control"
-                  (keydown)="filterInput($event, 'errorMessageName', 20, '')"
+                  (keydown)="filterInput($event, 'errorMessageName', 20, 'char')"
                   placeholder="{{ 'Enter Name' | translate }}" required>
               </div>
               <span *ngIf="errorMessageName" class="alertRedColor">{{ errorMessageName}}</span>
@@ -86,7 +86,7 @@
                   <div class="input-group-text"><i class="fa fa-id-badge grey-text"></i></div>
                 </div>
                 <input type="text" name="lastName" [(ngModel)]="form.data.lastName" class="form-control"
-                  (keydown)="filterInput($event, 'errorMessageLastName', 20, '')"
+                  (keydown)="filterInput($event, 'errorMessageLastName', 20, 'char')"
                   placeholder="{{ 'Enter LastName' | translate }}" required>
               </div>
               <span *ngIf="errorMessageLastName" class="alertRedColor">{{ errorMessageLastName}}</span>

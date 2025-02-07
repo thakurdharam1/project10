@@ -33,4 +33,38 @@ export class CartComponent extends BaseCtl {
     form.quantity = data.quantity;
     form.product = data.product;
   }
+  filterInput(event: KeyboardEvent, errorMessageField: string, maxLength: number, type: string) {
+    const inputChar = event.key;
+    const target = event.target as HTMLInputElement;
+  
+    let pattern;
+    if (type === 'char') {
+      // Allow only letters and space
+      pattern = /^[a-zA-Z\s]*$/;
+      if (!pattern.test(inputChar) && event.key !== 'Backspace') {
+        event.preventDefault();
+        this[errorMessageField] = 'Only letters are allowed!';
+        return;
+      }
+    } else if (type === 'int') {
+      // Allow only numbers
+      pattern = /^[0-9]*$/;
+      if (!pattern.test(inputChar) && event.key !== 'Backspace') {
+        event.preventDefault();
+        this[errorMessageField] = 'Only numbers are allowed!';
+        return;
+      }
+    }
+  
+    // Enforce max length
+    if (target.value.length >= maxLength && event.key !== 'Backspace') {
+      event.preventDefault();
+      this[errorMessageField] = `Maximum ${maxLength} characters allowed!`;
+    } else {
+      this[errorMessageField] = ''; // Clear error message
+    }
+  }
+  
+  
+  
 }

@@ -1,4 +1,4 @@
-package com.rays.common;
+ package com.rays.common;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;

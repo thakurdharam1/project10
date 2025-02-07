@@ -14,7 +14,7 @@ import com.rays.common.BaseDTO;
  */
 
 @Entity
-@Table(name = "ST_ROLE")
+@Table(name = "st_role")
 public class RoleDTO extends BaseDTO {
 
 	public static String YES = "Y";

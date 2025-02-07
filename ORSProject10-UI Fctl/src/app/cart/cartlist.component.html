@@ -1,4 +1,3 @@
-
 <app-navbar></app-navbar>
 
 <style>
@@ -56,28 +55,32 @@
       <div class="row search-inputs p-1 justify-content-center">
         <div class="col-sm-2">
           <input type="text" name="customerName" [(ngModel)]="form.searchParams.customerName" class="form-control"
-          (keydown)="filterInput($event, 'errorMessageName', 20, '')"
+            (keydown)="filterInput($event, 'errorMessageCustomerName', 20, 'char')"
             placeholder="{{ 'Enter  Customer' | translate }}">
-            <span *ngIf="errorMessageCustomerName" class="alertRedColor">{{ errorMessageCustomerName }}</span>
+          <span *ngIf="errorMessageCustomerName" class="alertRedColor">{{ errorMessageCustomerName }}</span>
+          <span *ngIf="form.inputerror?.customerName" class="alertRedColor">{{ form.inputerror.customerName }}</span>
         </div>
         <div class="col-sm-2">
-          <input type="date" name="dateOfTransction" [(ngModel)]="form.searchParams.dateOfTransction" class="form-control"
-            placeholder="{{ 'Enter Date Of Transction' | translate }}">
+          <input type="date" name="dateOfTransction" [(ngModel)]="form.searchParams.dateOfTransction"
+            class="form-control" placeholder="{{ 'Enter Date Of Transction' | translate }}">
         </div>
 
         <div class="col-sm-2">
           <input type="text" name="quantity" [(ngModel)]="form.searchParams.quantity" class="form-control"
-          (keydown)="filterInput($event, 'errorMessageProduct', 20, '')"
+            (keydown)="filterInput($event, 'errorMessageQuantity', 20, 'int')"
             placeholder="{{ 'Enter Quantity' | translate }}">
-            <span *ngIf="errorMessageQuantity" class="alertRedColor">{{ errorMessageQuantity }}</span>
+          <span *ngIf="errorMessageQuantity" class="alertRedColor">{{ errorMessageQuantity }}</span>
+          <span *ngIf="form.inputerror?.quantity" class="alertRedColor">{{ form.inputerror.quantity }}</span>
         </div>
-        
+
         <div class="col-sm-2">
-          <select class="form-control" name="product" [(ngModel)]="form.searchParams.product" aria-label="ngSelected" required>
+          <select class="form-control" name="product" [(ngModel)]="form.searchParams.product" aria-label="ngSelected"
+            required>
             <option [ngValue]="undefined">{{ 'Select Product' | translate }}</option>
-            <option *ngFor="let preloaddd of form.preload.CarteListtt" [value]="preloaddd.key">{{ preloaddd.value }}</option>
+            <option *ngFor="let preloaddd of form.preload.CarteListtt" [value]="preloaddd.key">{{ preloaddd.value }}
+            </option>
           </select>
-          
+
         </div>
 
         <div class="col-sm-1">
@@ -137,7 +140,8 @@
         </table>
 
         <div class="d-flex justify-content-between mt-3">
-          <button (click)="previous()" [disabled]="form.pageNo == 0" class="btn btn-info">{{ 'Previous' | translate }}</button>
+          <button (click)="previous()" [disabled]="form.pageNo == 0" class="btn btn-info">{{ 'Previous' | translate
+            }}</button>
 
           <div>
             <a class="btn btn-warning mr-1" [routerLink]="['/cartlist']" (click)="exit()">
