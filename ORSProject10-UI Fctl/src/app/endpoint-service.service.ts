@@ -22,13 +22,14 @@ export class EndpointServiceService {
   public JASPERREPORT = this.SERVER_URL+ "/Jasper";
 
   public ASSET = this.SERVER_URL + "/Asset";
-  public CUSTOMER = this.SERVER_URL + "/Customer";
   public EMPLOYEE = this.SERVER_URL+ "/Employee";
   public CART = this.SERVER_URL+ "/Cart";
   public ABC = this.SERVER_URL+ "/Abc";
   public VEHICLE = this.SERVER_URL+ "/Vehicle";
   public XYZ = this.SERVER_URL+ "/Xyz";
   public BANK = this.SERVER_URL+ "/Bank";
+  public CUSTOMER = this.SERVER_URL+ "/Customer";
+
 
 
 

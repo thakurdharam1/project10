@@ -37,8 +37,7 @@ import {MyprofileComponent} from './user/myprofile.component';
 
 import { AssetComponent } from './asset/asset.component';
 import { AssetListComponent } from './asset/assetlist.component';
-import { CustomerComponent } from './customer/customer.component';
-import { CustomerlistComponent } from './customer/customerlist.component';
+
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeelistComponent } from './employee/employeelist.component';
 import { CartComponent } from './cart/cart.component';
@@ -51,6 +50,8 @@ import { XyzComponent } from './xyz/xyz.component';
 import { XyzlistComponent } from './xyz/xyzlist.component';
 import { BankComponent } from './bank/bank.component';
 import { BanklistComponent } from './bank/banklist.component';
+import { CustomerComponent } from './customer/customer.component';
+import { CustomerlistComponent } from './customer/customerlist.component';
 
 
 const routes: Routes = [
@@ -275,14 +276,7 @@ const routes: Routes = [
         path: 'asset/:id',
         component: AssetComponent
       },
-      {
-        path:'customer',
-        component:CustomerComponent
-      },
-       {
-        path:'customerlist',
-        component:CustomerlistComponent
-      },
+     
       {
         path: 'employee',
         component: EmployeeComponent
@@ -371,6 +365,21 @@ const routes: Routes = [
     {
         path: 'banklist',
         component: BanklistComponent
+      
+    },
+    {
+        path: 'customer',
+        component: CustomerComponent
+      
+    },
+    {
+        path: 'customer/:id',
+        component: CustomerComponent
+      
+    },
+    {
+        path: 'customerlist',
+        component: CustomerlistComponent
       
     },
   

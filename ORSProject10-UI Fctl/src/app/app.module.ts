@@ -55,8 +55,7 @@ import { AuthService } from './auth-service.service';
 
 import { AssetComponent } from './asset/asset.component';
 import { AssetListComponent } from './asset/assetlist.component';
-import { CustomerComponent } from './customer/customer.component';
-import { CustomerlistComponent } from './customer/customerlist.component';
+
 import { RiyaComponent } from './riya/riya.component';
 import { DharamComponent } from './riya/dharam.component';
 import { EmployeeComponent } from './employee/employee.component';
@@ -71,6 +70,8 @@ import { XyzComponent } from './xyz/xyz.component';
 import { XyzlistComponent } from './xyz/xyzlist.component';
 import { BankComponent } from './bank/bank.component';
 import { BanklistComponent } from './bank/banklist.component';
+import { CustomerComponent } from './customer/customer.component';
+import { CustomerlistComponent } from './customer/customerlist.component';
 
 
 
@@ -126,8 +127,7 @@ export function myHttpLoader(http: HttpClient) {
     
     AssetComponent,
     AssetListComponent,
-    CustomerComponent,
-    CustomerlistComponent,
+   
     RiyaComponent,
     DharamComponent,
     EmployeeComponent,
@@ -142,6 +142,8 @@ export function myHttpLoader(http: HttpClient) {
     XyzlistComponent,
     BankComponent,
     BanklistComponent,
+    CustomerComponent,
+    CustomerlistComponent,
    
    
 
