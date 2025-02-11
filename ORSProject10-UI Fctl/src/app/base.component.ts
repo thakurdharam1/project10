@@ -142,6 +142,8 @@ export class BaseCtl implements OnInit {
     });
   }
 
+  
+  
   searchOperation(operation: String) {
     console.log("previous/next search start")
     var _self = this;
